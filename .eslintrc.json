@@ -1,0 +1,95 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "createDefaultProgram": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "ignorePatterns": [
+    "!**/*",
+    "**/*.d.ts"
+  ],
+  "rules": {
+    "no-extra-parens": 0,
+    "eol-last": [
+      "off"
+    ],
+    "multiline-ternary": 0,
+    "no-trailing-space": [
+      "off"
+    ],
+    "no-console": [
+      1,
+      {
+        "allow": [
+          "warn",
+          "error",
+          "info"
+        ]
+      }
+    ],
+    "@typescript-eslint/space-before-function-paren": 0,
+    "@typescript-eslint/restrict-template-expressions": 0,
+    "@typescript-eslint/prefer-ts-expect-error": 0,
+    "@typescript-eslint/promise-function-async": 0,
+    "space-before-function-paren": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-inferrable-types": 0,
+    "@typescript-eslint/prefer-nullish-coalescing": 0,
+    "@typescript-eslint/prefer-optional-chain": 0,
+    "@typescript-eslint/no-floating-promises": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/default-param-last": 0,
+    "import/no-named-as-default-member": 0,
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "unknown"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "@typescript-eslint/quotes": [
+      "off"
+    ],
+    "@typescript-eslint/semi": [
+      "off"
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "off"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "extensions": [
+          ".ts"
+        ],
+        "alwaysTryTypes": true
+        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+      }
+    }
+  }
+}
